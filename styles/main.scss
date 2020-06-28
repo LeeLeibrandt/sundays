@@ -13,6 +13,7 @@ $background: #000;
     padding: 0;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
 }
 body{
     background-color: $background;
@@ -250,6 +251,57 @@ body{
                 width: 30px;
             }
         }
+    }
+}
+
+.cards{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 4rem;
+    .card{
+        width: 20%;
+        height: 500px;
+        border: 1px solid transparent;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+     
+        img,h1,h4,.line,p{
+            margin: 1rem 0;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        h1{
+            font-weight: 700;
+        }
+        h4{
+            font-size: 14px;
+            font-weight: 700;
+            background-color: $primary;
+            color: $background;
+            width: 100px;
+            padding: .2rem 0;
+        }
+        .line{
+            width: 30px;
+            height: 3px;
+            border-radius: 5px;
+            background-color: $primary;
+        }
+        p{
+            font-size: 12px;
+            width: 80%;
+            line-height: 1rem;
+        }
+    }
+    .card:hover{
+        border: 1px solid $primary;
     }
 }
 

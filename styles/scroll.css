@@ -1,7 +1,40 @@
-
 #superContainer {
     height:100%;
     position:relative;
 }
-
+.section{
+    position: relative;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+         box-sizing: border-box; 
+}
+.custom-full1 {
+  background: grey;
+}
+.slide {
+    float: left;
+}
+.slide, .slidesContainer {
+    height: 100%;
+    display: block;
+}
+.slides {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.section.table,
+.slide.table{
+    display:table;
+    width:100%;
+}
+.tableCell{
+    width:100%;
+    height: 100%;
+    color: white;
+}
 
