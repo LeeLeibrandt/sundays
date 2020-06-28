@@ -1,0 +1,256 @@
+$primary: rgb(0, 119, 255);
+$secondary: #eee;
+$background: #000;
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: $background;
+    scroll-behavior: smooth;
+}
+.landing{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+    .left{
+        width: 50%;
+        height: 100vh;
+
+        .logo{
+            color: $secondary;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            h1{
+                font-size: 15px;
+            }
+        }
+        .side-nav{
+            width: 5%;
+            position: relative;
+            top: 250px;
+            ul{
+                padding-left: 1rem;
+                li{
+                    list-style: none;
+                    background-color: $secondary;
+                    margin: 1rem 0;
+                    width: 17px;
+                    height: 2px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+                .full{
+                    width: 30px;
+                }
+                .half:hover{
+                    width: 30px;
+                    transition: .3s ease-in;
+                }
+            }
+        }
+        .social{
+            position: relative;
+            top: 400px;
+            left: 15px;
+            .link{
+                color: $secondary;
+                height: 15px;
+                width: 15px;
+                border: 1px solid $secondary;
+                border-radius: 50%;
+                position: relative;
+                margin: 1rem 0;
+                cursor: pointer;
+                span{
+                    position: relative;
+                    left: 20px;
+                    top: -3px;
+                }
+            }
+            .link:nth-child(1):hover{
+                background-color: rgb(147, 86, 209);
+                transition: .2s ease-in-out;
+            }
+            .link:nth-child(2):hover{
+                background-color: $primary;
+                transition: .2s ease-in-out;
+            }
+            .link:nth-child(3):hover{
+                background-color: rgb(114, 145, 247);
+                transition: .2s ease-in-out;
+            }
+            .link:nth-child(4):hover{
+                background-color: rgb(128, 208, 255);
+                transition: .2s ease-in-out;
+            }
+        }
+        .content{
+            width: 95%;
+            position: relative;
+            top: -100px;
+            left: 150px;
+            color: $secondary;
+            h1{
+                font-size: 13rem;
+                letter-spacing: 1px;
+                color: $primary;
+            }
+            h4{
+                font-weight: 300;
+                font-size: 22px;
+                position: relative;
+                top: -20px;
+                left: 25px;
+            }
+            p{
+                width: 40%;
+                font-size: 15px;
+                font-weight: lighter;
+                position: relative;
+                left: 25px;
+                line-height: 1.2rem;
+            }
+        }
+    }
+    .right{
+        width: 50%;
+        height: 100vh;
+        background-image: url('../img/download.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        #theme-btn{
+            position: relative;
+            top: 10px;
+            left: 10px;
+            border: 1px solid $secondary;
+            width: 50px;
+            height: 24px;
+            border-radius: 20px;
+            text-align: center;
+            cursor: pointer;
+
+            .ball{
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                border: 1px solid $secondary;
+                position: relative;
+                top: 1px;
+                left: 1px;
+            }
+            .ball:hover{
+                position: relative;
+                left: 27px;
+                transition: .4s ease-in-out;
+            }
+        }
+
+        #app.event{
+            transition: all .3s ease-in-out;
+            background-color: $secondary;
+        }
+
+        .menu-toggler{
+            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            #sidebar{
+                position: relative;
+                top: 0;
+                left: 60px;
+                width: 150px;
+                height: 100vh;
+             
+                text-align: center;
+                transform: perspective(1200px) rotateY(90deg);
+                transform-origin: right;
+                transition: all 400ms ease;
+                ul{
+                    text-align: center;
+                    padding-top: 5rem;
+                    li{
+                        color: $primary;
+                        font-size: 15px;
+                        width: 100px;
+                        list-style: none;
+                        
+                        border: 1px solid transparent;
+                        transform: rotate(90deg);
+                    }
+                    li:hover{
+                        border: 1px solid $secondary;
+                    }
+                    li:nth-child(4){
+                        border: 1px solid $secondary;
+                    }
+                    li:nth-child(4):hover{
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+            #sidebar.active{
+                transform: perspective(1200px) rotateY(0deg);
+            }
+            #toggle-btn{
+                position: relative;
+                top: -20px;
+                left: -15px;
+                transition: left 200ms linear 0ms, transform 300ms ease 100ms;
+
+                span{
+                    position: relative;
+                    top: 0;
+                    display: block;
+                    background-color: $secondary;
+                    width: 30px;
+                    height: 2px;
+                    margin: .5rem 0;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    transition: transform 300ms ease 200ms;
+                }
+            }
+            #toggle-btn.active{
+                transition: .5s ease-in;
+            }
+            #toggle-btn span:nth-child(1){
+                width: 20px;
+            }
+            #toggle-btn span:nth-child(3){
+                width: 20px;
+            }
+            #toggle-btn.active span:nth-child(1){
+                top: 10px;
+                transform: rotate(45deg);
+                transition: .3s ease-in;
+                width: 30px;
+            }
+            #toggle-btn.active span:nth-child(2){
+                opacity: 0;
+            }
+            #toggle-btn.active span:nth-child(3){
+                top: -10px;
+                transform: rotate(-45deg);
+                transition: .3s ease-in-out;
+                width: 30px;
+            }
+        }
+    }
+}
+
+
