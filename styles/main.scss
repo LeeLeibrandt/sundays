@@ -19,6 +19,28 @@ body{
     background-color: $background;
     scroll-behavior: smooth;
 }
+h1{
+    font-weight: 700;
+}
+h4{
+    font-size: 14px;
+    font-weight: 700;
+    background-color: $primary;
+    color: $background;
+    width: 100px;
+    padding: .2rem 0;
+}
+.line{
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: $primary;
+}
+p{
+    font-size: 12px;
+    width: 80%;
+    line-height: 1rem;
+}
 .landing{
     height: 100vh;
     width: 100%;
@@ -44,12 +66,16 @@ body{
                 padding-left: 1rem;
                 li{
                     list-style: none;
-                    background-color: $secondary;
-                    margin: 1rem 0;
-                    width: 17px;
-                    height: 2.5px;
-                    border-radius: 3px;
-                    cursor: pointer;
+                    a{
+                        div{
+                            background-color: $secondary;
+                            margin: 1rem 0;
+                            width: 17px;
+                            height: 2.5px;
+                            border-radius: 3px;
+                            cursor: pointer;
+                        }
+                    }
                 }
                 .full{
                     width: 30px;
@@ -266,6 +292,7 @@ body{
 }
 
 .cards{
+    background-color: #dde1e7;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -288,28 +315,6 @@ body{
             width: 150px;
             height: 100px;
         }
-        h1{
-            font-weight: 700;
-        }
-        h4{
-            font-size: 14px;
-            font-weight: 700;
-            background-color: $primary;
-            color: $background;
-            width: 100px;
-            padding: .2rem 0;
-        }
-        .line{
-            width: 30px;
-            height: 3px;
-            border-radius: 5px;
-            background-color: $primary;
-        }
-        p{
-            font-size: 12px;
-            width: 80%;
-            line-height: 1rem;
-        }
     }
     .card:hover{
         border: 1px solid $primary;
@@ -318,18 +323,25 @@ body{
 
 .grids{
     height: 100vh;
-    margin: 40px auto;
+    padding-top: 3rem;
     justify-content: center;
     display: grid;
+    background-color: #dde1e7;
     grid-template-columns: repeat(6, 150px);
     grid-template-rows: repeat(4, 150px);
     .space{
-        margin: .5rem;
+        margin: .55rem;
+    }
+    .box-out{
+        box-shadow: -4px -4px 8.5px #ffffff41, 
+                    4px 4px 5px rgba(94, 104, 121, 0.089);
+    }
+    .grid:hover{
+        box-shadow: inset -3px -3px 8.5px #ffffff41, 
+                    inset 3px 3px 5px rgba(94, 104, 121, 0.089);
     }
     .grid{
-        border: 1px solid #eee;
-        border-radius: 20px;
-       
+        border-radius: 23px;
         align-items: center;
         justify-content: center;
         display: flex;
@@ -337,6 +349,30 @@ body{
             width: 100%;
             height: 100%;
             border-radius: 20px;
+        }
+        .details{
+            width: 100%;
+            height: 100%;
+            padding: 1rem .5rem;
+            h1,h4,.line,p,.arrow{
+                margin: 1.5rem;
+                font-family: sans-serif;
+            }
+            h4{
+                text-align: center;
+                background-color: $primary;
+                color: $background;
+            }
+            .arrow{
+                width: 40px;
+                height: 3px;
+                background-color: $secondary;
+                cursor: pointer;
+            }
+            .arrow:hover{
+                transition: .3s ease-in-out;
+                width: 60px;
+            }
         }
     }
     .grid-1{

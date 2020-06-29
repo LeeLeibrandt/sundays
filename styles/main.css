@@ -12,6 +12,32 @@ body {
   scroll-behavior: smooth;
 }
 
+h1 {
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #0077ff;
+  color: #000;
+  width: 100px;
+  padding: .2rem 0;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #0077ff;
+}
+
+p {
+  font-size: 12px;
+  width: 80%;
+  line-height: 1rem;
+}
+
 .landing {
   height: 100vh;
   width: 100%;
@@ -47,6 +73,9 @@ body {
 
 .landing .left .side-nav ul li {
   list-style: none;
+}
+
+.landing .left .side-nav ul li a div {
   background-color: #eee;
   margin: 1rem 0;
   width: 17px;
@@ -321,6 +350,7 @@ body {
 }
 
 .cards {
+  background-color: #dde1e7;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -359,44 +389,19 @@ body {
   height: 100px;
 }
 
-.cards .card h1 {
-  font-weight: 700;
-}
-
-.cards .card h4 {
-  font-size: 14px;
-  font-weight: 700;
-  background-color: #0077ff;
-  color: #000;
-  width: 100px;
-  padding: .2rem 0;
-}
-
-.cards .card .line {
-  width: 30px;
-  height: 3px;
-  border-radius: 5px;
-  background-color: #0077ff;
-}
-
-.cards .card p {
-  font-size: 12px;
-  width: 80%;
-  line-height: 1rem;
-}
-
 .cards .card:hover {
   border: 1px solid #0077ff;
 }
 
 .grids {
   height: 100vh;
-  margin: 40px auto;
+  padding-top: 3rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   display: -ms-grid;
   display: grid;
+  background-color: #dde1e7;
   -ms-grid-columns: (150px)[6];
       grid-template-columns: repeat(6, 150px);
   -ms-grid-rows: (150px)[4];
@@ -404,12 +409,21 @@ body {
 }
 
 .grids .space {
-  margin: .5rem;
+  margin: .55rem;
+}
+
+.grids .box-out {
+  -webkit-box-shadow: -4px -4px 8.5px #ffffff41, 4px 4px 5px rgba(94, 104, 121, 0.089);
+          box-shadow: -4px -4px 8.5px #ffffff41, 4px 4px 5px rgba(94, 104, 121, 0.089);
+}
+
+.grids .grid:hover {
+  -webkit-box-shadow: inset -3px -3px 8.5px #ffffff41, inset 3px 3px 5px rgba(94, 104, 121, 0.089);
+          box-shadow: inset -3px -3px 8.5px #ffffff41, inset 3px 3px 5px rgba(94, 104, 121, 0.089);
 }
 
 .grids .grid {
-  border: 1px solid #eee;
-  border-radius: 20px;
+  border-radius: 23px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -425,6 +439,36 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 20px;
+}
+
+.grids .grid .details {
+  width: 100%;
+  height: 100%;
+  padding: 1rem .5rem;
+}
+
+.grids .grid .details h1, .grids .grid .details h4, .grids .grid .details .line, .grids .grid .details p, .grids .grid .details .arrow {
+  margin: 1.5rem;
+  font-family: sans-serif;
+}
+
+.grids .grid .details h4 {
+  text-align: center;
+  background-color: #0077ff;
+  color: #000;
+}
+
+.grids .grid .details .arrow {
+  width: 40px;
+  height: 3px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.grids .grid .details .arrow:hover {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  width: 60px;
 }
 
 .grids .grid-1 {
