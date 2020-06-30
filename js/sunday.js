@@ -40,7 +40,7 @@
         this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
 
-        this.el.innerHTML = '<span class="wrap">'+'its time to '+this.txt+'</span>';
+        this.el.innerHTML = '<span class="wrap">'+'time to '+this.txt+'</span>';
 
         var that = this;
         var delta = 200 - Math.random() * 100;

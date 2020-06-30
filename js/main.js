@@ -14,7 +14,7 @@
 			'resize' : true,
 			'slidesColor' : [],
 			'anchors':[],
-			'scrollingSpeed': 700,
+			'scrollingSpeed': 600,
 			'easing': 'easeInQuart',
 			'menu': false,
 			'navigation': false,
