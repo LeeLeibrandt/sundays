@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
 $primary: rgb(0, 119, 255);
 $secondary: #eee;
 $background: #000;
@@ -19,8 +21,6 @@ $background: #000;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
 }
 body{
     background-color: $background;
@@ -94,6 +94,7 @@ p{
             position: relative;
             top: 20px;
             left: 20px;
+            font-family: 'Press Start 2P', cursive;
             h1{
                 font-size: 15px;
                 color: $background;
@@ -139,8 +140,8 @@ p{
         .content{
             width: 95%;
             position: relative;
-            top: 20px;
-            left: 150px;
+            top: 40px;
+            left: 100px;
             z-index: 1;
             p, span{
                 font-family: sans-serif;
@@ -148,11 +149,13 @@ p{
                 line-height: 1.5rem;
             }
             h1{
-                font-size: 13rem;
+                padding-bottom: 2rem;
+                font-size: 10rem;
                 letter-spacing: 1px;
                 color: $primary;
                 z-index: 0;
                 opacity: .8;
+                font-family: 'Press Start 2P', cursive;
             }
             span{
                 font-size: 24px;
