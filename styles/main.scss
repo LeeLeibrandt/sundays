@@ -6,6 +6,14 @@ $background: #000;
     box-shadow: -4px -4px 8.5px #ffffff63, 
                 4px 4px 5px rgba(94, 104, 121, 0.151);
 }
+@mixin flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
 
 *{
     margin: 0;
@@ -40,7 +48,7 @@ p{
     width: 80%;
     line-height: 1rem;
 }
-#services, #projects, #team, #jobs,.left{
+#services, #projects, #gallery, #footer,.left{
     background-color: #dde1e7;
 }
 
@@ -397,6 +405,26 @@ p{
                 width: 60px;
             }
         }
+        h1 {
+            margin: 0
+        }
+        .box {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+
+            border-radius: 20px;
+        }
+        .hid-box {
+            top: 100%;
+            position: relative;
+            transition: all .3s ease-out;
+            background: linear-gradient(45deg, $primary, #07d89d);
+            height: 100%;
+        }
+        .box:hover > .hid-box{
+            top: 0;
+        }
     }
     .grid-1{
         grid-row: 1 / 3;
@@ -431,58 +459,39 @@ p{
     }
 }
 
-.container{
+.gallery{
+    display: flex;
     width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
     height: 100vh;
-    padding: 2rem;
-    .text{
-        font-size: 15rem;
-        position: absolute;
-        top: 250px;
-        left: 200px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        transform: rotate(0deg);
-        opacity: .5;
-        letter-spacing: 2rem;
-        span{
-            color: $primary;
-        }
+    .box {
+        flex: 1;
+        overflow: hidden;
+        transition: .5s;
+        margin: 0 2%;
+        box-shadow: 0 20px 30px rgba(0,0,0,.1);
+        line-height: 0;
     }
-    .space{
-        margin: 2rem;
+    
+    .box > img {
+        width: 200%;
+        height: calc(90% + 10vh);
+        object-fit: cover; 
+        transition: .5s;
     }
-    .brands{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        .brand{
-            text-align: center;
-            margin: 1rem;
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
-            @include boxshadow();
-            h1{
-                color: $primary;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-family: sans-serif;
-                font-size: 13px;
-            }
-        }
+    
+    .box > span {
+        font-size: 3.8vh;
+        display: block;
+        text-align: center;
+        height: 10vh;
+        line-height: 2.6;
     }
-    .news-img{
+    
+    .box:hover { flex: 1 1 50%; }
+    .box:hover > img {
         width: 100%;
         height: 100%;
-        text-align: center;
-        padding: 1rem;
-        img{
-            margin-top: 1.5rem;
-            width: 60%;
-            height: 60%;
-        }
-    }
+    }  
 }
