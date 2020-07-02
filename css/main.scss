@@ -97,7 +97,7 @@ p{
             font-family: 'Press Start 2P', cursive;
             h1{
                 font-size: 15px;
-                color: $background;
+                color: $primary;
             }
         }
         
@@ -152,7 +152,6 @@ p{
                 padding-bottom: 2rem;
                 font-size: 10rem;
                 letter-spacing: 1px;
-                color: $primary;
                 z-index: 0;
                 opacity: .8;
                 font-family: 'Press Start 2P', cursive;
@@ -415,18 +414,31 @@ p{
             height: 100%;
             width: 100%;
             overflow: hidden;
-
             border-radius: 20px;
         }
-        .hid-box {
+        .hid-box{
             top: 100%;
             position: relative;
             transition: all .3s ease-out;
-            background: linear-gradient(45deg, $primary, #07d89d);
             height: 100%;
         }
         .box:hover > .hid-box{
             top: 0;
+        }
+        .gradientcolor1{
+            background: linear-gradient(45deg, $primary, #07d89d);
+        }
+        .gradientcolor2{
+            background: linear-gradient(45deg, #f19872, #e86c9a);
+        }
+        .gradientcolor3{
+            background: linear-gradient(45deg, #3a3d98, #6f22b9);
+        }
+        .gradientcolor4{
+            background: linear-gradient(45deg, #9d316e, #de2d3e);
+        }
+        .gradientcolor5{
+            background: linear-gradient(45deg, #00ac53, #23c3e0);
         }
     }
     .grid-1{

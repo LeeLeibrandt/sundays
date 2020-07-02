@@ -99,7 +99,7 @@ p {
 
 .landing .left .logo h1 {
   font-size: 15px;
-  color: #000;
+  color: #0077ff;
 }
 
 .landing .left .social {
@@ -167,7 +167,6 @@ p {
   padding-bottom: 2rem;
   font-size: 10rem;
   letter-spacing: 1px;
-  color: #0077ff;
   z-index: 0;
   opacity: .8;
   font-family: 'Press Start 2P', cursive;
@@ -519,12 +518,31 @@ p {
   position: relative;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
-  background: linear-gradient(45deg, #0077ff, #07d89d);
   height: 100%;
 }
 
 .grids .grid .box:hover > .hid-box {
   top: 0;
+}
+
+.grids .grid .gradientcolor1 {
+  background: linear-gradient(45deg, #0077ff, #07d89d);
+}
+
+.grids .grid .gradientcolor2 {
+  background: linear-gradient(45deg, #f19872, #e86c9a);
+}
+
+.grids .grid .gradientcolor3 {
+  background: linear-gradient(45deg, #3a3d98, #6f22b9);
+}
+
+.grids .grid .gradientcolor4 {
+  background: linear-gradient(45deg, #9d316e, #de2d3e);
+}
+
+.grids .grid .gradientcolor5 {
+  background: linear-gradient(45deg, #00ac53, #23c3e0);
 }
 
 .grids .grid-1 {
