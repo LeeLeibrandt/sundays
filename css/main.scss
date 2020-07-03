@@ -41,7 +41,7 @@ h4{
     width: 30px;
     height: 3px;
     border-radius: 5px;
-    background-color: $primary;
+    background: linear-gradient(45deg, $primary, #07d89d);
 }
 p{
     font-size: 12px;
@@ -55,6 +55,7 @@ p{
 .side-nav{
     position: absolute;
     top: 270px;
+    left: -10px;
     ul{
         padding-left: 1rem;
         li{
@@ -98,6 +99,7 @@ p{
             h1{
                 font-size: 15px;
                 color: $primary;
+                text-shadow: 10px 10px 5px rgba(94, 104, 121, 0.418);
             }
         }
         
@@ -149,12 +151,15 @@ p{
                 line-height: 1.5rem;
             }
             h1{
+                width: 100%;
                 padding-bottom: 2rem;
                 font-size: 10rem;
                 letter-spacing: 1px;
                 z-index: 0;
                 opacity: .8;
+                color: $primary;
                 font-family: 'Press Start 2P', cursive;
+                text-shadow: 20px 20px 5px rgba(94, 104, 121, 0.219);
             }
             span{
                 font-size: 24px;
@@ -162,6 +167,7 @@ p{
                 top: -20px;
                 left: 25px;
                 letter-spacing: 2px;
+                text-shadow: 10px 10px 5px rgba(94, 104, 121, 0.521);
             }
             p{
                 width: 40%;
@@ -326,6 +332,10 @@ p{
             margin: 1rem 0;
             color: $background;
         }
+        h1{
+            font-family:'Press Start 2P', cursive;
+            font-size: 1rem;
+        }
         h4{
             color: $secondary;
             font-family: sans-serif;
@@ -337,9 +347,18 @@ p{
     }
     .card:hover{
         border: 1px solid $primary;
+        border-top: transparent;
+        border-left: transparent;
         position: relative;
         top: -15px;
+        box-shadow: 10px 10px 5px rgba(94, 104, 121, 0.267);
         transition: .3s ease-in-out;
+        h1, p{
+            text-shadow: 10px 10px 5px rgba(94, 104, 121, 0.267);
+        }
+        h4, img, .line{
+            box-shadow: 10px 10px 5px rgba(94, 104, 121, 0.267);
+        }
     }
     .card::before{
         content: '';
@@ -351,6 +370,7 @@ p{
         color: $primary;
         position: relative;
         left: -100px;
+        text-shadow: 10px 10px 5px rgba(94, 104, 121, 0.616);
     }
 }
 
@@ -371,6 +391,12 @@ p{
     .grid:hover{
         box-shadow: inset -3px -3px 8.5px #ffffff41, 
                     inset 3px 3px 5px rgba(94, 104, 121, 0.089);
+                    h1{
+                        text-shadow: 10px 10px 5px rgba(94, 104, 121, 0.267);
+                    }
+                    h4, .line{
+                        box-shadow: 10px 10px 5px rgba(94, 104, 121, 0.267);
+                    }
     }
     .grid{
         border-radius: 23px;
@@ -388,18 +414,21 @@ p{
             padding: 1rem .5rem;
             h1,h4,.line,p,.arrow{
                 margin: 1.5rem;
-                font-family: sans-serif;
                 color: $background;
+                font-family: sans-serif;
+            }
+            h1{
+                color: rgba(255, 255, 255, 0.589);
+                font-family:'Press Start 2P', cursive;
             }
             h4{
                 text-align: center;
-                background-color: $primary;
                 color: $secondary;
             }
             .arrow{
                 width: 40px;
                 height: 3px;
-                background-color: $secondary;
+                background-color: $background;
                 cursor: pointer;
             }
             .arrow:hover{
@@ -432,7 +461,7 @@ p{
             background: linear-gradient(45deg, #f19872, #e86c9a);
         }
         .gradientcolor3{
-            background: linear-gradient(45deg, #3a3d98, #6f22b9);
+            background: linear-gradient(45deg, #6c70f8, #6f22b9);
         }
         .gradientcolor4{
             background: linear-gradient(45deg, #9d316e, #de2d3e);

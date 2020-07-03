@@ -28,7 +28,7 @@ h4 {
   width: 30px;
   height: 3px;
   border-radius: 5px;
-  background-color: #0077ff;
+  background: linear-gradient(45deg, #0077ff, #07d89d);
 }
 
 p {
@@ -44,6 +44,7 @@ p {
 .side-nav {
   position: absolute;
   top: 270px;
+  left: -10px;
 }
 
 .side-nav ul {
@@ -100,6 +101,7 @@ p {
 .landing .left .logo h1 {
   font-size: 15px;
   color: #0077ff;
+  text-shadow: 10px 10px 5px rgba(94, 104, 121, 0.418);
 }
 
 .landing .left .social {
@@ -164,12 +166,15 @@ p {
 }
 
 .landing .left .content h1 {
+  width: 100%;
   padding-bottom: 2rem;
   font-size: 10rem;
   letter-spacing: 1px;
   z-index: 0;
   opacity: .8;
+  color: #0077ff;
   font-family: 'Press Start 2P', cursive;
+  text-shadow: 20px 20px 5px rgba(94, 104, 121, 0.219);
 }
 
 .landing .left .content span {
@@ -178,6 +183,7 @@ p {
   top: -20px;
   left: 25px;
   letter-spacing: 2px;
+  text-shadow: 10px 10px 5px rgba(94, 104, 121, 0.521);
 }
 
 .landing .left .content p {
@@ -393,6 +399,11 @@ p {
   color: #000;
 }
 
+.cards .card h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+}
+
 .cards .card h4 {
   color: #eee;
   font-family: sans-serif;
@@ -405,10 +416,23 @@ p {
 
 .cards .card:hover {
   border: 1px solid #0077ff;
+  border-top: transparent;
+  border-left: transparent;
   position: relative;
   top: -15px;
+  -webkit-box-shadow: 10px 10px 5px rgba(94, 104, 121, 0.267);
+          box-shadow: 10px 10px 5px rgba(94, 104, 121, 0.267);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
+}
+
+.cards .card:hover h1, .cards .card:hover p {
+  text-shadow: 10px 10px 5px rgba(94, 104, 121, 0.267);
+}
+
+.cards .card:hover h4, .cards .card:hover img, .cards .card:hover .line {
+  -webkit-box-shadow: 10px 10px 5px rgba(94, 104, 121, 0.267);
+          box-shadow: 10px 10px 5px rgba(94, 104, 121, 0.267);
 }
 
 .cards .card::before {
@@ -422,6 +446,7 @@ p {
   color: #0077ff;
   position: relative;
   left: -100px;
+  text-shadow: 10px 10px 5px rgba(94, 104, 121, 0.616);
 }
 
 .grids {
@@ -452,6 +477,15 @@ p {
           box-shadow: inset -3px -3px 8.5px #ffffff41, inset 3px 3px 5px rgba(94, 104, 121, 0.089);
 }
 
+.grids .grid:hover h1 {
+  text-shadow: 10px 10px 5px rgba(94, 104, 121, 0.267);
+}
+
+.grids .grid:hover h4, .grids .grid:hover .line {
+  -webkit-box-shadow: 10px 10px 5px rgba(94, 104, 121, 0.267);
+          box-shadow: 10px 10px 5px rgba(94, 104, 121, 0.267);
+}
+
 .grids .grid {
   border-radius: 23px;
   -webkit-box-align: center;
@@ -479,20 +513,24 @@ p {
 
 .grids .grid .details h1, .grids .grid .details h4, .grids .grid .details .line, .grids .grid .details p, .grids .grid .details .arrow {
   margin: 1.5rem;
-  font-family: sans-serif;
   color: #000;
+  font-family: sans-serif;
+}
+
+.grids .grid .details h1 {
+  color: rgba(255, 255, 255, 0.589);
+  font-family: 'Press Start 2P', cursive;
 }
 
 .grids .grid .details h4 {
   text-align: center;
-  background-color: #0077ff;
   color: #eee;
 }
 
 .grids .grid .details .arrow {
   width: 40px;
   height: 3px;
-  background-color: #eee;
+  background-color: #000;
   cursor: pointer;
 }
 
@@ -534,7 +572,7 @@ p {
 }
 
 .grids .grid .gradientcolor3 {
-  background: linear-gradient(45deg, #3a3d98, #6f22b9);
+  background: linear-gradient(45deg, #6c70f8, #6f22b9);
 }
 
 .grids .grid .gradientcolor4 {

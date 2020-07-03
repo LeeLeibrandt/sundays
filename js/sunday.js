@@ -99,3 +99,8 @@ anime.timeline({loop: true})
     delay: (el, i) => 100 + 30 * i
   });
   
+  AOS.init({
+    easing: 'ease',
+    duration: 1800,
+    once: false
+  });

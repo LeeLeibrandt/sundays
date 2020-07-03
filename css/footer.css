@@ -83,6 +83,7 @@
   position: relative;
   left: 300px;
   color: black;
+  text-shadow: 10px 10px 5px rgba(94, 104, 121, 0.418);
 }
 
 .contact .center {
@@ -105,6 +106,8 @@
   position: relative;
   left: 130px;
   z-index: 1;
+  -webkit-box-shadow: 10px 10px 5px rgba(94, 104, 121, 0.418);
+          box-shadow: 10px 10px 5px rgba(94, 104, 121, 0.418);
 }
 
 .contact .center i {
