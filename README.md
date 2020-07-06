@@ -3,7 +3,7 @@
 ### Description
 The lazy website inspired by monday.
 
-#### Inspiration came from monday website done by bebolt team.
+#### Inspiration came from monday website done by bebold team.
 #### link - https://mondays.ch/
 
 **PREVIEW**
