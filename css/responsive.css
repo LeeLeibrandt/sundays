@@ -1,0 +1,163 @@
+@media screen and (max-width: 1000px) {
+  #app {
+    width: 100%;
+  }
+  .landing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100vh;
+    margin-bottom: 10rem;
+  }
+  .landing .left {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .landing .left .logo, .landing .left .side-nav, .landing .left .social, .landing .left .scroll {
+    display: none;
+  }
+  .landing .left .content {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .landing .right {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .landing .right .bg-img img {
+    width: 100%;
+  }
+  .cards {
+    margin-top: 30rem;
+    margin-bottom: 24.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cards .card {
+    width: 100%;
+    margin: .5rem;
+  }
+  .cards .card img {
+    width: 200px;
+    height: 120px;
+  }
+  .cards .card:nth-child(1) {
+    display: none;
+  }
+  .cards .card:nth-child() {
+    display: none;
+  }
+  .cards .card:nth-child(4) {
+    display: none;
+  }
+  .cards .card:nth-child(5) {
+    display: none;
+  }
+  .cards .card:nth-child(6) {
+    display: none;
+  }
+  .grids {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 18rem;
+  }
+  .grids .grid {
+    width: 90%;
+  }
+  #footer {
+    width: 100%;
+    text-align: center;
+  }
+  #footer .contact {
+    text-align: center;
+    width: 100%;
+    height: 70vh;
+  }
+  #footer .contact img {
+    width: 100%;
+    position: relative;
+    left: -100px;
+  }
+  #footer .contact h1 {
+    display: none;
+  }
+  #footer .contact .icons {
+    display: none;
+  }
+  #footer .scroll {
+    display: none;
+  }
+  #footer .content {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .landing {
+    margin-bottom: 20rem;
+  }
+  .landing .left .content {
+    position: relative;
+    left: 10px;
+  }
+  .landing .left .content h1 {
+    font-size: 5rem;
+  }
+  .landing .left .content p {
+    width: 90%;
+  }
+  .cards {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #footer {
+    width: 100%;
+    text-align: center;
+  }
+  #footer .contact img {
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .grids {
+    margin-bottom: 22rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .grids {
+    margin-bottom: 18rem;
+    margin-top: -7.5rem;
+  }
+  .grids .card {
+    width: 100%;
+    margin: .5rem;
+  }
+  .grids .card img {
+    width: 200px;
+    height: 150px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

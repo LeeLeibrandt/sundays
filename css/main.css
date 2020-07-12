@@ -37,7 +37,7 @@ p {
   line-height: 1rem;
 }
 
-#services, #projects, #gallery, #footer, .left {
+#services, #projects, #gallery, #footer, .left, body {
   background-color: #dde1e7;
 }
 

@@ -1,0 +1,172 @@
+
+@media screen and (max-width: 1000px) {
+    #app{
+        width: 100%; 
+    }
+    
+    .landing{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+        margin-bottom: 10rem;
+        .left{
+            width: 100%;
+            order: 2;
+            position: relative;
+            top: 0;
+            left: 0;
+            .logo, .side-nav, .social, .scroll{
+                display: none;
+            }
+            .content{
+                width: 100%;
+                position: relative;
+                top: 0;
+                left: 0;
+                
+            }
+        }
+        .right{
+            width: 100%;
+            order: 1;
+            .bg-img img{
+                width: 100%;
+            }
+        }
+    }
+    ////////////////END//////////////////
+
+    ///////////////START//////////////////
+    .cards{
+        margin-top: 30rem;
+        margin-bottom: 24.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        .card{
+            width: 100%;
+            margin: .5rem;
+            img{
+                width: 200px;
+                height: 120px;
+            }
+        }
+        .card:nth-child(1){
+            display: none;
+        }
+        .card:nth-child(){
+            display: none;
+        }
+        .card:nth-child(4){
+            display: none;
+        }
+        .card:nth-child(5){
+            display: none;
+        }
+        .card:nth-child(6){
+            display: none;
+        }
+    }
+    ////////////////END//////////////////
+
+    ///////////////////START///////////////
+    .grids{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 18rem;
+        .grid{
+            width: 90%;
+        }
+    }
+    ///////////////////END///////////////
+
+    ///////////////////START///////////////
+    #footer{
+        width: 100%;
+        text-align: center;
+        .contact{
+           text-align: center;
+           width: 100%;
+           height: 70vh;
+           img{
+               width: 100%;
+               position: relative;
+               left: -100px;
+           }
+            h1{
+               display: none;
+            }
+            .icons{
+                display: none;
+            }
+        }
+        .scroll{
+           display: none;
+        }
+        .content{
+            display: none;
+            
+        }
+    }
+    ///////////////////END///////////////
+
+}
+
+@media screen and (max-width: 650px) {
+    ///////////////////START///////////////
+    .landing{
+        margin-bottom: 20rem;
+        .left{
+            .content{
+                position: relative;
+                left: 10px;
+                h1{
+                    font-size: 5rem;
+                }
+                p{
+                    width: 90%;
+                }
+            }
+        }
+    }
+    ////////////////END//////////////////
+
+    ///////////////////START///////////////
+    .cards{
+        margin-top: 0;
+    }
+    ////////////////END//////////////////
+
+}
+@media screen and (max-width:600px){
+    #footer{
+        width: 100%;
+        text-align: center;
+        .contact{
+           img{
+               width: 100%;
+               position: relative;
+               left: 0;
+           }
+        }
+    }
+}
+
+@media screen and (max-width:414px){
+    .grids{
+        margin-bottom: 22rem;
+    }
+}
+@media screen and (max-width:375px){
+    .grids{
+        margin-bottom: 18rem;
+        margin-top: -7.5rem;
+        .card{
+            width: 100%;
+            margin: .5rem;
+            img{
+                width: 200px;
+                height: 150px;
+            }
+        }
+    }
+}
